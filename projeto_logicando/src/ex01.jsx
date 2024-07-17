@@ -36,7 +36,7 @@ function Exercicio01 () {
                 <h2>Exercício 1:</h2>
                 <p>1. Crie um objeto chamada Ingresso, que possua o nome do evento e o valor do ingresso. Crie o método exibirValor(), que apenas retorne o valor do ingresso. Crie o método __str__ que retorne o nome do evento seguido do valor do ingresso. Crie um programa para testar sua classe.</p>
                 <h3>Entrada:</h3>
-                <form class="flex-column" onSubmit={enviar}>
+                <form className="flex-column" onSubmit={enviar}>
                     <label htmlFor="inputNomeEvento">Digite o nome do evento: </label>
                     <input type="text" id="inputNomeEvento" placeholder="Jogo de Futebol" name="nomeEvento" onChange={handleChange} value={ingresso.nomeEvento || ""}></input>
                     <label htmlFor="inputValorIngresso">Digite o valor do ingresso: </label>
