@@ -29,16 +29,6 @@ function Exercicio04 () {
         setElemento(event.target.value);
     }
 
-    // const adicionarElemento = (event) => {
-    //     event.preventDefault();
-    //     setArray((array) => ([...array, elemento]));    
-    //     console.log(array);
-    //     setLista((lista) => ([new Lista(array)]));
-    //     console.log(lista.padrao)
-    //     document.getElementById("outLista").textContent = lista.padrao;
-    //     document.getElementById("outListaSemRepetir").textContent = lista.semRepetir;
-    // }
-
     const adicionarElemento = (event) => {
         event.preventDefault();
     
@@ -48,7 +38,7 @@ function Exercicio04 () {
             console.log(novoArray);
     
             // Atualiza a lista após atualizar o array
-            setLista((prevLista) => {
+            setLista(() => {
                 const novaLista = new Lista(novoArray);
                 document.getElementById("outLista").textContent = novaLista.padrao.join(', ');
                 document.getElementById("outListaSemRepetir").textContent = novaLista.semRepetir().join(', ');

@@ -16,5 +16,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Exercicio03 />
     <hr></hr>
     <Exercicio04 />
-  </React.StrictMode>,
+  </React.StrictMode>
 )
